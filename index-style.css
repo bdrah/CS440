@@ -1,0 +1,78 @@
+
+
+     /* body tag selector: define a default font. Never use Comic Sans. */
+ body {
+     font-family: "Comic Sans MS";
+ }
+
+/* .section class selector: set the font of all tags with class="section" */
+.section {
+    font-family: arial;
+}
+
+/* h2 descendants of .section class: set a background color for all h2 text in sections */
+.section h2 {
+    background-color: rgb(255,255,220);
+    font-family: Georgia;
+    color: blueviolet;
+}
+
+/* #courses id with <a> tag selector:
+    set the hover properties of links within #courses element */
+#courses a:link {
+    color:rgb(100,0,0) ;
+}
+#courses a:hover {
+    color:plum;
+}
+#courses a:active {
+    color:white;
+}
+#courses a:visited {
+    color:blue;
+}
+
+/* span tag selector: color all span tags red */
+span {
+    color: palevioletred;
+}
+
+/* span with .serious class: set font to Impact */
+span.serious {
+    font-family: "Impact";
+}
+
+/* span with .silly class: set font to Comic Sans */
+span.silly {
+    font-family: "Comic Sans MS";
+}
+
+/* Put the image on the right */
+#photo { float: right; }
+
+/* Table Style! */
+/* Put borders around the cells */
+th, td { border: solid 1px black; }
+/* Collapse or 'merge' the borders into each other*/
+table { border-collapse: collapse; }
+
+/* Color every other row (tr) light grey */
+tr:nth-child(even) {
+    background:rgb(220,220,220);
+
+}
+
+/* Color green the text of currentlytaking rows */
+/*tr.currentlytaking {
+    color:green;
+}* no green /
+
+/* Align and style the "For Credit" and "Listener" cells */
+td.enrollheader {
+    background-color:white;
+    text-align:center;
+    font-weight:bold;
+    color:darkmagenta
+}
+
+

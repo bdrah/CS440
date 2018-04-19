@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publish New Event</title>
+    <link rel="stylesheet" type="text/css" href="addEvent_Style.css"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="addEvent_js.js"></script>
+
+</head>
+<body>
+<div class="head" align="center">
+    <h1>Publish New Event</h1>
+</div>
+
+<div id="EventInfo">
+    <div class="event-triangle"></div>
+    <h2 class="event-header" align="center">Enter Event Information</h2>
+
+    <div id="event-container">
+    <label class="i">Event Name:</label><input type="text" id="name" name="name">
+
+    <label class="i">Discription:</label><textarea name="discr" id="discr"></textarea>
+    <label class="i">Start Date:</label><input type="date" value="01/01/2018" id="sd" name="sd">
+    <label class="i">Due Date:</label><input type="date" name="dd" id="dd">
+    <label class="i">Start Time:</label><input type="time" value="01:01" id="st" name="st">
+   <label class="i">City:</label>
+        <select name="city" id="city">
+        <option value="Riyadh"  value="Riyadh">Riyadh</option>
+        <option value="Abha"  value = "Abha">Abha</option>
+        <option value="Al Bahah" value ="Al Bahah">Al Bahah</option>
+        <option value="Dammam" value = "Dammam">Dammam</option>
+         <option value="Ha'il" value = "Ha'il">Ha'il</option>
+         <option value="Jeddah" value = "Jeddah">Jeddah</option>
+    </select>
+
+        <label class="i">Location: </label><input type="text" id="loc">
+
+        <label class="i">target audience: </label>
+<div id="radioGroup">
+         <input type="radio" name="gender" value="Males" required/>  Males<br>
+         <input type="radio" name="gender" value="Female" required/> Female<br>
+         <input type="radio" name="gender" value="Family" required/>Family
+</div>
+
+
+        <label class="i">Age Group:</label>
+
+        <div id="checkGroup">
+            <input type="checkbox" name="chek" value="Children upto 9 years of age"/>  Children upto 9 years of age<br>
+            <input type="checkbox" name="chek" value="Adolescents 10-19 years"/> Adolescents 10-19 years<br>
+            <input type="checkbox" name="chek" value="Adults 20-45 years"/>Adults 20-45 years<br>
+            <input type="checkbox" name="chek" value="Middle age 46-60 years"/>Middle age 46-60 years<br>
+            <input type="checkbox" name="chek" value="Old > 60"/>Old > 60
+
+        </div>
+
+
+        <div align="center" id="submit"><input type="submit" id="button" value="Add" style="font-weight:bold;" onclick="return val();" ></div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

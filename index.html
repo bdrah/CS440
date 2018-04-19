@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+
+<!--Here's a worked example of HTML and CSS from Lab 1!
+	HTML consists of a hierarchy of elements.
+
+	Each element has an opening tag and (most of the time) a closing tag.
+	For example, the whole document is enclosed in the html element, delimited by the <html> and </html> tags.
+	You can also close tags immediately using a slash before the > symbol: A newline is represented by <br />.
+
+	Each tag can have attributes set as name="value" pairs.
+	For example, the image element needs a source URL for the image file: <img src="dog.jpg" />
+-->
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index-style.css"/>
+    <!-- The title shows up in the browser toolbar -->
+    <title>Badrah Homepage</title>
+</head>
+
+<body>
+<!--A header for the page-->
+<h1>Badrah</h1>
+
+<!--My photo-->
+<img id="photo" src="data:image/jpeg;base64,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">
+
+<!--Divs and spans can be used to logically and structurally organize your page
+    Here we use divs to separate different sections of the page: about, courses, interests and pet information
+    * divs are block elements and are separated by newlines or breaks in the page
+    * spans are inline elements and are displayed without newlines between them
+-->
+
+<!--Each div (and any other tag) can have a class and id.
+    The class can be shared with other tags.
+    The id is unique to this tag.
+    The class and id can be selected by CSS rules to style groups of elements differently.
+-->
+<div class="section" id="about">
+    <!--An h2 header - smaller than the h1 header-->
+    <h2>About</h2>
+
+    <!--<p> tags are paragraphs have newlines before and after them-->
+    <p>HELLO!</p>
+    <!--The <a> tag is a link.
+        The text between the <a> and </a> tags is the displayed text.
+        The href attribute has the link's target URL.-->
+    <p>Hi, I'm badrah I love <a href="addEvent.html">HCI</a>.</p>
+</div>
+
+<div class="section" id="courses">
+    <h2>Courses</h2>
+    <p>Here are some courses I've taken:</p>
+
+    <!--Tables can be used to group text or images into rows and columns-->
+    <table>
+        <!--Each <tr> is a row-->
+        <tr>
+            <!--Each <th> or <td> is a cell.
+                The number of cells in a row determines the number of columns in the table.
+            -->
+            <th>Course Number</th>
+            <th>Course Title</th>
+            <th>Semester Taken</th>
+        </tr>
+        <tr>
+            <!--A <td> or cell can span multiple columns using the colspan attribute-->
+            <td class="enrollheader" colspan=3>For Credit</td>
+        </tr>
+        <!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
+        <tr class="currentlytaking">
+            <td>CSC440</td>
+            <td>User Interface Design</td>
+            <td>Spring 2018</td>
+        </tr>
+        <tr>
+            <td>CSC361</td>
+            <td>Artificial Intelligence</td>
+            <td>Fall 2017</td>
+        </tr>
+        <tr>
+            <td>CSC429</td>
+            <td>Security</td>
+            <td>Spring 2018</td>
+        </tr>
+        <tr>
+            <td class="enrollheader" colspan=3>my favoraite courses</td>
+        </tr>
+        <tr>
+            <td>CSC426</td>
+            <td>Machine Learning</td>
+            <td>Spring 2018</td>
+        </tr>
+        <tr>
+            <td>CSC180</td>
+            <td>Database Systems</td>
+            <td>Fall 2015</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section" id="interests">
+    <h2>Interests</h2>
+    <!--Spans are displayed inline, but allow you to identify text in CSS rules-->
+    I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
+</div>
+
+
+<!--This is the style section.
+    It consists of CSS rules, which could also be included as a separate file.-->
+
+</body>
+</html>
